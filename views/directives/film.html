@@ -1,0 +1,21 @@
+<div ng-hide='{{name}}'>
+	<ul class="list-unstyled">
+		<li><div class="col-sm-1">Title: </div><div class="col-sm-11">{{movie.Title | uppercase}}</div></li>
+		<li ng-show="movie.Year"><div class="col-sm-1">Year: </div><div class="col-sm-11">{{movie.Year}}</div></li>
+		<li ng-show="movie.Director"><div class="col-sm-1">Director: </div><div class="col-sm-11">{{movie.Director}}</div></li>
+		<li><div class="col-sm-1">Favourite: </div><div class="col-sm-11"><input type='checkbox' ng-model="movie.Favourite" ng-checked="movie.Favourite"></div></li>
+		<li><div class="col-sm-1">Watched: </div><div class="col-sm-11"><input type='checkbox' ng-model="movie.Watched" ng-checked="movie.Watched"></div></li>
+	</ul>
+	<!-- <input type="button" ng-click='removeMovie' value="Remove"> -->
+	<button class="btn btn-default removeButton">Remove</button>
+	<hr>
+</div>
+
+<!-- <table  class="table table-bordered">
+  <tr>
+    <td>{{movie.Title}}</td>
+    <td>Year: {{movie.Year}}</td>
+    <td>{{movie.Director}}</td>
+    <td><span ng-show="movie.Favourite">Favourite</span></td>
+  </tr>
+</table> -->

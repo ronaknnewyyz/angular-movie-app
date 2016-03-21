@@ -1,0 +1,8 @@
+<div>
+	<hr>
+	<h3>Search for Your Favourite Movies</h3>
+	<input type="text" ng-model="searchTitleName"></input>
+
+	<h3>Your Favourite WatchList</h3>
+	<film name="!movie.Favourite" movie="movie" remove-movie="faves.removeTitle(movieTitle)" ng-repeat="movie in faves.movies | filter: searchTitleName | orderBy : 'Title'"></film>
+</div>

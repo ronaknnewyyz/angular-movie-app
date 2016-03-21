@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-fundamentals",
+  "authors": [
+    "Ronak Nagda <ronakn@newyyz.com>"
+  ],
+  "description": "This is my first ng app",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://www.newyyz.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "ngstorage": "^0.3.10"
+  }
+}
